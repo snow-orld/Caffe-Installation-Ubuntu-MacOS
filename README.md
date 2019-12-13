@@ -7,8 +7,11 @@ The [official installation guide](http://caffe.berkeleyvision.org/installation.h
 ### Installation Environment 
 
 Ubuntu: 16.04
+
 Python: 3.5.2
+
 OpenCV: 3.4.2
+
 CUDA: 8.0
 
 ### 1. Install Dependencies
@@ -152,14 +155,20 @@ Minor modifications have been applied according to default installation director
 
 This repo contains the actual Makefile.config and CMakeCahe.txt files that work for the compilation, both for Ubuntu 16.04 and MacOS 10.14.
 
-Rename `Makefile.config.xxx.xxx` to `Makefile.config` and place it under the root of caffe folder.
+Rename `Makefile.config.xxx.xxx` to `Makefile.config` and place it under the root of caffe folder. 
+
+Pre-make by running the following commands in Terminal.
+
+```
+$ $ cd ~/caffe/build
+$ cmake ..
+```
 
 Rename `CMakeCache.txt.xxx.xxx` to `CMakeCache.txt` and place it under the build subfolder under caffe root folder.
 
-Then run the following commands:
+Then run the following commands.
 
 ```
-$ cd ~/caffe/build
 $ cmake ..
 $ sudo make all -j8
 $ sudo make pycaffe
