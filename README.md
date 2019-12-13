@@ -22,7 +22,7 @@ CUDA 8 is required on Ubuntu 16.04.
 
 ### 2. Install Caffe
 
-### Download Caffe
+#### Download Caffe
 
 Type in the following commands in Terminal:
 
@@ -33,7 +33,7 @@ $ cd caffe/
 $ cp Makefile.config.example Makefile.config
 ```
 
-### Modify `Makefile.config`
+#### Modify `Makefile.config`
 
 Type in the following commands in Terminal to open the file `Makefile.config`:
 
@@ -85,7 +85,7 @@ WITH_PYTHON_LAYER := 1
 
 Save the file.
 
-### Pre-make
+#### Pre-make
 
 Type in the following commands in Terminal:
 
@@ -96,7 +96,7 @@ $ cd build
 $ cmake ..
 ```
 
-### Modify `CMakeCache.txt`
+#### Modify `CMakeCache.txt`
 
 Use your favourite code editer to open `CMakeCache.txt`; find and modify the following code:
 
@@ -120,7 +120,7 @@ Boost_PYTHON_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python-py
 Boost_PYTHON_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python-py35.so
 ```
 
-### Make `caffe` again
+#### Make `caffe` again
 
 ```
 $ cmake ..
@@ -128,7 +128,7 @@ $ sudo make all -j8
 $ sudo make pycaffe
 ```
 
-### Introduce the path of caffe module to bash profile
+#### Introduce the path of caffe module to bash profile
 
 Type in the following commands in Terminal to edit `~/.bashrc`.
 
